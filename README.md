@@ -11,7 +11,7 @@
 //
 // ------------------------------------------------------------------------
 //
-//  Projet de synthèse d'image Master 1 Informatique
+//  Project for the Weekly Game Jam 264
 //  ~ Thomas DUMONT A.K.A 0ctodice
 //
 // ------------------------------------------------------------------------
