@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/SceneManager.cs" type="Script" id=1]
+[ext_resource path="res://Audios/SoundPlayer.tscn" type="PackedScene" id=2]
+
+[node name="Scenes" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": ""
+}
+_Scenes = PoolStringArray( "res://Scenes/Scene01.tscn", "res://Scenes/Scene02.tscn", "res://Scenes/Scene03.tscn", "res://Scenes/Scene04.tscn", "res://Scenes/Scene05.tscn", "res://Scenes/Scene06.tscn", "res://Scenes/Scene07.tscn", "res://Scenes/Scene08.tscn", "res://Scenes/Scene09.tscn", "res://Scenes/Scene10.tscn", "res://Scenes/Credit.tscn" )
+
+[node name="CurrentScene" type="Node2D" parent="."]
+
+[node name="SceneManager" type="Node2D" parent="."]
+
+[node name="SoundPlayer" parent="SceneManager" instance=ExtResource( 2 )]
+
+[node name="Tween" type="Tween" parent="SceneManager"]
+
+[node name="Control" type="Control" parent="SceneManager"]
+margin_right = 320.0
+margin_bottom = 184.0
+
+[node name="ColorRect" type="ColorRect" parent="SceneManager/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.164706, 0.164706, 0.164706, 1 )
+
+[node name="Timer" type="Timer" parent="SceneManager"]

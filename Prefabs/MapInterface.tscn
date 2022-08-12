@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/map-base.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Map.cs" type="Script" id=2]
+
+[node name="MapInterface" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+script = ExtResource( 2 )
+
+[node name="BaseMap" type="TextureRect" parent="."]
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -117.0
+margin_top = -76.0
+margin_right = 117.0
+margin_bottom = 76.0
+texture = ExtResource( 1 )
+stretch_mode = 6
+
+[node name="Tween" type="Tween" parent="."]

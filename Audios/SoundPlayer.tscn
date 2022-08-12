@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Audios/music.wav" type="AudioStream" id=1]
+[ext_resource path="res://Audios/chest.wav" type="AudioStream" id=2]
+[ext_resource path="res://Audios/step.wav" type="AudioStream" id=3]
+[ext_resource path="res://Audios/gameover.wav" type="AudioStream" id=4]
+
+[node name="SoundPlayer" type="Node"]
+
+[node name="Chest" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="GameOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Step" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -15.0
+autoplay = true
